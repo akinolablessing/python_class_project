@@ -1,5 +1,5 @@
-class DataStructure:
-    #LIST
+class List:
+
 
     def __init__(self,size):
         self.size = 0
@@ -38,13 +38,15 @@ class DataStructure:
             return self.my_list.pop(index)
 
 
-    def insert(self, index, value):
+    def insert(self, index, value)->bool:
         if index < 0 or index >= len(self.my_list):
             return False
         else:
-            #self.size +=1
+
             #self.size += value
-            return self.my_list.insert(index, value)
+             self.my_list.insert(index, value)
+             if index == value:
+                return True
 
 
 

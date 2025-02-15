@@ -1,10 +1,20 @@
-def func(number:list)->list:
-    number.sort()
-    reverse = number.reverse()
-    decrease = number[: : -1]
-    print(decrease)
-    print(number)
-    print(reverse)
+class Student(object):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
+    @property
+    def name(self):
+        return self.name
+    @name.setter
+    def name(self, value):
+        self.name = value
+    @property
+    def age(self):
+        return self.age
+    @age.setter
+    def age(self, value):
+        self.age = value
+student = Student("John", 22)
+print(student)
 
-func([5,3,4,2,1])
