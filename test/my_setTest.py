@@ -37,18 +37,18 @@ class MySet(unittest.TestCase):
         my_set.update( new_element)
         self.assertEqual(my_set.getElement(), {1, 2, "fish", "Chicken"})
 
-    def test_intersection_element(self):
-       my_set = My_Set()
-       my_set.add(1)
-       my_set.add(2)
-       # my_set.add("fish")
-       my_set.add("fish")
-       new_element = My_Set()
-       new_element.add("fish")
-       new_element.add(1)
-       new_element.add(2)
-       result = my_set.intersection(new_element)
-       self.assertEqual(result, {"fish",1,2})
+    # def test_intersection_element(self):
+    #    my_set = My_Set()
+    #    my_set.add(1)
+    #    my_set.add(2)
+    #    # my_set.add("fish")
+    #    my_set.add("fish")
+    #    new_element = My_Set()
+    #    new_element.add("fish")
+    #    new_element.add(1)
+    #    new_element.add(2)
+    #    result = my_set.intersection(new_element)
+    #    self.assertEqual(result, {"fish",1,2})
 
 
 

@@ -1,6 +1,6 @@
 import unittest
 
-from KEEP2 import deposit
+
 from myBank import Bank
 
 class MyTestCase(unittest.TestCase):
