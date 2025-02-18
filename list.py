@@ -48,16 +48,3 @@ class List:
              if index == value:
                 return True
 
-
-
-
-
-
-
-
-
-
-
-
-
-
